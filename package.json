@@ -1,0 +1,19 @@
+{
+  "name": "slika-api",
+  "version": "1.0.0",
+  "description": "slika api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyush97/slika-API.git"
+  },
+  "author": "piyush mehta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piyush97/slika-API/issues"
+  },
+  "homepage": "https://github.com/piyush97/slika-API#readme"
+}
