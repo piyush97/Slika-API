@@ -8,7 +8,7 @@ const Notes = [{
   Department: "CV",
   Subject: "Estimation and Costing",
   Sem: "7",
-    Link: "https://bit.ly/2nFtSUC",
+  Link: "https://bit.ly/2nFtSUC",
   id: 2
 }];
 
