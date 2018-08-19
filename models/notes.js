@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const NoteSchema = new Schema({
-  description: String,
-  done: Boolean,
+  Department: String,
+  Subject: String,
+  Sem: Number,
+  
 });
 
 module.exports = mongoose.model('notes', NoteSchema);

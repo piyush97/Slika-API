@@ -3,7 +3,11 @@ const router = require('express').Router();
 const Notes = require('../models/notes');
 // const notes = require('./notes');
 
-router.get('/', (req, res) => res.render('index', {}));
+router.get('/', (req, res) => {
+  Notes.find().then((results) => {
+    res.send({ notes: results });
+  });
+});
 
 router.post('/', (req, res) => {
   const newNote = new Notes({ description: req.body.description });
