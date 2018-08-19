@@ -1,4 +1,3 @@
-/*  eslint no-console: "error"  */
 
 const express = require('express');
 const mustacheExpress = require('mustache-express');
@@ -16,16 +15,24 @@ mongoose.connect('mmongodb://piyush:piyush1@ds123852.mlab.com:23852/slika', {
   console.log('db Connected');
 });
 
+// Body Parser as a Middleware
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Moustache Express
 
 const mustacheExpressInstance = mustacheExpress();
 mustacheExpressInstance.cache = null;
 app.engine('mustache', mustacheExpressInstance);
 app.set('view engine', 'mustache');
 app.set('views', `${__dirname}/views`);
-// Using our routes
+
+// Using our routes as middleware
+
 app.use('/', routes);
+
 const PORT = 8080;
+
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Listening to port  ${PORT}`);
 });
