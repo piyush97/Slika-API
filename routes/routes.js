@@ -10,12 +10,22 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  const newNote = new Notes({ description: req.body.description });
+  const newNote = new Notes({
+    Department: req.body.Department,
+    Subject: req.body.Subject,
+    Sem: req.body.Sem,
+    Link: req.body.Link,
+    id: req.body.id,
+  });
 
   newNote
     .save()
     .then((result) => {
       console.log(result);
+      res.redirect('/');
+    })
+    .catch((err) => {
+      console.log(err);
       res.redirect('/');
     });
 });
