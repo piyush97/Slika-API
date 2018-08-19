@@ -5,7 +5,7 @@ const Notes = require('../models/notes');
 
 router.get('/', (req, res) => {
   Notes.find().then((results) => {
-    res.send({ notes: results });
+    res.send({ results });
   });
 });
 
