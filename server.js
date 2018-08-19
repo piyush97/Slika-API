@@ -13,6 +13,14 @@ const Joi = require('joi');
 
 const Notes = require('./notes');
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const mustacheExpressInstance = mustacheExpress();
+mustacheExpressInstance.cache = null;
+app.engine('mustache', mustacheExpressInstance);
+app.set('view engine', 'mustache');
+app.set('views', __dirname + '/views');
+
 app.post('/notes', (req, res) => {
   const schema = {
     Department: Joi.string().min(1).required(),
