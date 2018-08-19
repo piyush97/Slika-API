@@ -19,7 +19,9 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "mongoose": "^5.2.8",
+    "joi": "^13.6.0",
+    "mongoose": "^5.2.9",
+    "mustache-express": "^1.2.7",
     "nodemon": "^1.18.3"
   },
   "engines": {
