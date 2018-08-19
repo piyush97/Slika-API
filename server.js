@@ -25,7 +25,7 @@ app.get('/', (req, res) => res.render('index', {}));
 
 app.get('/notes', (req, res) => (res.send(Notes)));
 
-app.post('/todos', function (req, res){
+app.post('/', (req, res) => {
   res.json(req.body);
 });
 const PORT = 8080;
