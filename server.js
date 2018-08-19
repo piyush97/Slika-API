@@ -1,17 +1,10 @@
 
 const express = require('express');
-
 const mustacheExpress = require('mustache-express');
-
 const bodyParser = require('body-parser');
-
-// const mongoose = require('mongoose');
+const Notes = require('./notes');
 
 const app = express();
-
-// const Joi = require('joi');
-
-const Notes = require('./notes');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
