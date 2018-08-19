@@ -4,7 +4,9 @@ const Notes = require('../models/notes');
 // const notes = require('./notes');
 
 router.get('/', (req, res) => {
-    res.send({ Notes });
+  Notes.find().then((results) => {
+    res.send({ notes: results });
+  });
 });
 
 router.post('/', (req, res) => {
