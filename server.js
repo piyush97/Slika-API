@@ -5,11 +5,11 @@ const mustacheExpress = require('mustache-express');
 
 const bodyParser = require('body-parser');
 
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 const app = express();
 
-const Joi = require('joi');
+// const Joi = require('joi');
 
 const Notes = require('./notes');
 
@@ -25,5 +25,8 @@ app.get('/', (req, res) => res.render('index', {}));
 
 app.get('/notes', (req, res) => (res.send(Notes)));
 
+app.post('/todos', function (req, res){
+  res.json(req.body);
+});
 const PORT = 8080;
 app.listen(process.env.PORT || PORT);
