@@ -1,6 +1,6 @@
 
 const express = require('express');
-const mustacheExpress = require('mustache-express');
+// const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./routes/routes');
@@ -21,11 +21,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Moustache Express
 
-const mustacheExpressInstance = mustacheExpress();
-mustacheExpressInstance.cache = null;
-app.engine('mustache', mustacheExpressInstance);
-app.set('view engine', 'mustache');
-app.set('views', `${__dirname}/views`);
+// const mustacheExpressInstance = mustacheExpress();
+// mustacheExpressInstance.cache = null;
+// app.engine('mustache', mustacheExpressInstance);
+// app.set('view engine', 'mustache');
+// app.set('views', `${__dirname}/views`);
 
 // Using our routes as middleware
 
