@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-let NoteSchema = new Schema({
-  description: String
+const NoteSchema = new Schema({
+  description: String,
+  done: Boolean,
 });
 
 module.exports = mongoose.model('notes', NoteSchema);
