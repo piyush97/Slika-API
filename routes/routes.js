@@ -6,7 +6,7 @@ const Notes =  require('../models/notes');
 router.get('/', (req, res) => res.render('index', {}));
 
 router.post('/', (req, res) => {
-  res.json(req.body);
+  let newNote = new Notes({ description: req.body });
 });
 
 router.get('/notes', (req, res) => (res.send(Notes)));
