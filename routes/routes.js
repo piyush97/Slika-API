@@ -3,6 +3,7 @@ const router = require('express').Router();
 const Notes = require('../models/notes');
 // const notes = require('./notes');
 const User = require('../models/User');
+const gravatar = require('gravatar');
 
 router.get('/', (req, res) => {
   Notes.find().then((results) => {
@@ -38,7 +39,19 @@ router.post('/register', (req, res) => {
     email: req.body.email,
   }).then((user) => {
     if (user) {
-      return res.status(400).json({ email: 'email already exists' });
+      return res.status(400).json({ email: 'email already exists' }); 
+    } {
+      const avatar = gravatar.url(req.body.email, {
+        s: '200', // size
+        r: 'pg', // rating
+        d: 'mm', // Default
+      });
+      const newUser = new User({
+        name: req.body.name,
+        email: req.body.email,
+        avatar,
+        password: req.body.password,
+      });
     }
   });
 });
