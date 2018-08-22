@@ -1,10 +1,10 @@
 // Routes
 const router = require('express').Router();
 const gravatar = require('gravatar');
+const bcrypt = require('bcryptjs');
 const Notes = require('../models/notes');
 // const notes = require('./notes');
 const User = require('../models/User');
-
 router.get('/', (req, res) => {
   Notes.find().then((results) => {
     res.send({ notes: results });
@@ -52,6 +52,15 @@ router.post('/register', (req, res) => {
         email: req.body.email,
         avatar,
         password: req.body.password,
+      });
+      bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.has(newUser.password, salt, (err, hash) =>{
+          if (err) throw err;
+          newUser.password = hash;
+          newUser.save()
+            .then(user => res.json(user))
+            .catch(err => console.log(err));
+        });
       });
     }
   });
