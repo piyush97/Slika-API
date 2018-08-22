@@ -5,11 +5,16 @@ const bcrypt = require('bcryptjs');
 const Notes = require('../models/notes');
 // const notes = require('./notes');
 const User = require('../models/User');
+
+// @Route Get
+
 router.get('/', (req, res) => {
   Notes.find().then((results) => {
     res.send({ notes: results });
   });
 });
+
+// @Route Post
 
 router.post('/', (req, res) => {
   const newNote = new Notes({
@@ -32,7 +37,11 @@ router.post('/', (req, res) => {
     });
 });
 
+// @Route Get
+
 router.get('/notes', (req, res) => (res.send(Notes)));
+
+// @Route Post
 
 router.post('/register', (req, res) => {
   User.findOne({
@@ -65,4 +74,5 @@ router.post('/register', (req, res) => {
     }
   });
 });
+
 module.exports = router;
