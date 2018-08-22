@@ -1,9 +1,9 @@
 // Routes
 const router = require('express').Router();
+const gravatar = require('gravatar');
 const Notes = require('../models/notes');
 // const notes = require('./notes');
 const User = require('../models/User');
-const gravatar = require('gravatar');
 
 router.get('/', (req, res) => {
   Notes.find().then((results) => {
@@ -46,6 +46,7 @@ router.post('/register', (req, res) => {
         r: 'pg', // rating
         d: 'mm', // Default
       });
+
       const newUser = new User({
         name: req.body.name,
         email: req.body.email,
