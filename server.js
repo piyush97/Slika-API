@@ -13,7 +13,7 @@ mongoose.connect('mmongodb://piyush:piyush1@ds123852.mlab.com:23852/slika', {
   useNewUrlParser: true,
 }).then(() => {
   console.log('db Connected');
-});
+}).catch(err => console.log(err));
 
 // Body Parser as a Middleware
 
