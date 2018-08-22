@@ -2,6 +2,7 @@
 const router = require('express').Router();
 const Notes = require('../models/notes');
 // const notes = require('./notes');
+const User = require('../models/User');
 
 router.get('/', (req, res) => {
   Notes.find().then((results) => {
@@ -32,4 +33,9 @@ router.post('/', (req, res) => {
 
 router.get('/notes', (req, res) => (res.send(Notes)));
 
+router.post('/register', (req, res) => {
+  User.findOne({
+    email: req.body.email,
+  });
+});
 module.exports = router;
