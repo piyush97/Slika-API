@@ -17,7 +17,8 @@ mongoose.connect('mmongodb://piyush:piyush1@ds123852.mlab.com:23852/slika', {
 
 // Body Parser as a Middleware
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Moustache Express
 
