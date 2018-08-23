@@ -1,3 +1,7 @@
 language: node_js # Sets which engine use to build the project
 node_js: "node" # Specifies node version to use "node"="latest"
 services: mongodb
+cache: # Caching Node Modules :D
+  directories:
+    - "node_modules"
+  yarn: true
