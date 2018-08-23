@@ -5,15 +5,12 @@ Slika Notes Api
 
 [![Build Status](https://travis-ci.com/piyush97/Slika-API.svg?token=g3CxDf8EXQoxGMAHdh9U&branch=master)](https://travis-ci.com/piyush97/Slika-API)
 
-# Method to use this api 
+# Docs
+#### POST
+`/register`
+1. User registration
+1. **Input Params** `Email, Password, Confirmation Password, name` 
 
-```js
-const request = require('superagent');
-request
-  .get('https://slika.herokuapp.com/')
-  .end((err, res) => {
-    console.log(res.body);
-  });
-```
+`/`
 
-### Made by Piyush With Love
+Made with :heart By Piyush Mehta 
