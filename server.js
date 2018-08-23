@@ -2,14 +2,16 @@
 const express = require('express');
 // const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
+const passport = require('passport');
 const mongoose = require('mongoose');
 const routes = require('./routes/routes');
+const keys = require('./config/keys');
 
 const app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mmongodb://piyush:piyush1@ds123852.mlab.com:23852/slika', {
+mongoose.connect(keys.mongoURI, {
   useNewUrlParser: true,
 }).then(() => {
   console.log('db Connected');
@@ -19,6 +21,12 @@ mongoose.connect('mmongodb://piyush:piyush1@ds123852.mlab.com:23852/slika', {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+// Passport middleware
+app.use(passport.initialize());
+
+// Passport Config
+
+require('./config/passport')(passport);
 
 // Moustache Express
 
