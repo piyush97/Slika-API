@@ -38,4 +38,23 @@
 }
 ```
 
+#### Tech Used:
+```json
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.18.3",
+    "esdoc": "1.1.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "express": "4.16.3",
+    "gravatar": "1.6.0",
+    "joi": "13.6.0",
+    "jsonwebtoken": "8.3.0",
+    "mongoose": "5.2.9",
+    "mustache-express": "1.2.7",
+    "nodemon": "1.18.3",
+    "passport": "0.4.0",
+    "passport-jwt": "4.0.0",
+    "validator": "10.6.0"
+```
+
+
 Made with :blue_heart: By Piyush Mehta 
