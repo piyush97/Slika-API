@@ -3,11 +3,11 @@ const router = require('express').Router();
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const passport = require('passport');
 const Notes = require('../models/notes');
 const keys = require('../config/keys');
 // const notes = require('./notes');
 const User = require('../models/User');
-
 // @Route Get
 
 router.get('/', (req, res) => {
@@ -122,4 +122,9 @@ router.post('/login', (req, res) => {
     });
 });
 
+// @Route GET
+// @Access Private
+router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
+  res.json({ msg: 'Success' });
+});
 module.exports = router;
