@@ -106,7 +106,7 @@ router.post('/login', (req, res) => {
             };
 
             // Signed Token
-            jwt.sign(payload, );
+            jwt.sign(payload, keys.secretOrKey);
           } else {
             return res.status(400).json({ password: 'Password Incorrect'});
           }
