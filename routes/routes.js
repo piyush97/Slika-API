@@ -106,7 +106,7 @@ router.post('/login', (req, res) => {
             };
 
             // Signed Token
-            jwt.sign(payload, keys.secretOrKey);
+            jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 });
           } else {
             return res.status(400).json({ password: 'Password Incorrect'});
           }
