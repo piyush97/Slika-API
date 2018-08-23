@@ -2,6 +2,7 @@
 const express = require('express');
 // const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
+const passport = require('passport');
 const mongoose = require('mongoose');
 const routes = require('./routes/routes');
 const keys = require('./config/keys');
@@ -20,6 +21,12 @@ mongoose.connect(keys.mongoURI, {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+// Passport middleware
+app.use(passport.initialize());
+
+// Passport Config
+
+require('./config/passport')(passport);
 
 // Moustache Express
 
