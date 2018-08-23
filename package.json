@@ -29,7 +29,8 @@
     "mustache-express": "1.2.7",
     "nodemon": "1.18.3",
     "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.6.0"
   },
   "engines": {
     "node": "10.6.0"
