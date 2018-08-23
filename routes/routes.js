@@ -4,6 +4,7 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const Notes = require('../models/notes');
+const keys = require('../config/keys');
 // const notes = require('./notes');
 const User = require('../models/User');
 
