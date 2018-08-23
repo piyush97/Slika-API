@@ -4,12 +4,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./routes/routes');
+const keys = require('./config/keys');
 
 const app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mmongodb://piyush:piyush1@ds123852.mlab.com:23852/slika', {
+mongoose.connect(keys.mongoURI, {
   useNewUrlParser: true,
 }).then(() => {
   console.log('db Connected');
