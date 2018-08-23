@@ -95,7 +95,17 @@ router.post('/login', (req, res) => {
       bcrypt.compare(password, user.password)
         .then((isMatch) => {
           if (isMatch) {
-            res.json({ msg: 'Success' });
+            // User matched
+
+            // Created JWT Payload
+            const payload = {
+              id: user.id,
+              name: user.name,
+              avatar: user.avatar,
+            };
+
+            // Signed Token
+            jwt.sign(payload, );
           } else {
             return res.status(400).json({ password: 'Password Incorrect'});
           }
