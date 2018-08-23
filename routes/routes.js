@@ -2,6 +2,7 @@
 const router = require('express').Router();
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const Notes = require('../models/notes');
 // const notes = require('./notes');
 const User = require('../models/User');
