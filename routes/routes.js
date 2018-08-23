@@ -75,4 +75,11 @@ router.post('/register', (req, res) => {
   });
 });
 
+// @Route Post
+
+router.post('/login', (req, res) => {
+  const email = req.body.email,
+  const password = req.body.password,
+})
+
 module.exports = router;
