@@ -8,6 +8,10 @@ const Notes = require('../models/notes');
 const keys = require('../config/keys');
 // const notes = require('./notes');
 const User = require('../models/User');
+
+// Load Input Validation
+const ValidateRegisterInput = require('../validation/register');
+
 // @Route Get
 
 router.get('/', (req, res) => {
@@ -46,10 +50,16 @@ router.get('/notes', (req, res) => (res.send(Notes)));
 // @Route Post
 
 router.post('/register', (req, res) => {
+  const { errors, isValid } = ValidateRegisterInput(req.body);
+  // Check validation
+  if (!isValid) {
+    return res.status(404).json(errors);
+  }
   User.findOne({
     email: req.body.email,
   }).then((user) => {
     if (user) {
+      errors.email = 'Email already exists';
       return res.status(400).json({ email: 'email already exists' }); 
     } {
       const avatar = gravatar.url(req.body.email, {
