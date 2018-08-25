@@ -71,6 +71,9 @@ https://slika.herokuapp.com/
 ## What Is Slika?
 `Slika is an Organisation for Engineers made by Engineers`
 
+## Why Use Slika-API?
+`Slika Api not only provides you with the best notes, it also gives you authentications and userbase option to contact other students easily`
+
 # How's the code?
 This only works well by accident and was mostly a joke. The code quality is accordingly.
 
