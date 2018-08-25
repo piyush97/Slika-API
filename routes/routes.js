@@ -178,7 +178,9 @@ router.get('/profile', passport.authenticate('jwt', {
 
 router.post('/profile', passport.authenticate('jwt', {
   session: false,
-}), () => {
+}), (req, res) => {
+  const profileFields = {};
+  profileFields.user = req.user.id;
 });
 
 module.exports = router;
