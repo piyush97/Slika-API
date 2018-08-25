@@ -10,6 +10,12 @@
 https://slika.herokuapp.com/
 
 # Docs
+
+---------
+---------
+
+
+
 ### POST
 ####  `/register`
 1. User registration
@@ -57,6 +63,13 @@ https://slika.herokuapp.com/
     "passport-jwt": "4.0.0",
     "validator": "10.6.0"
 ```
+
+# FAQS
+
+-------
+
+## What Is Slika?
+`Slika is an Organisation for Engineers made by Engineers`
 
 # How's the code?
 This only works well by accident and was mostly a joke. The code quality is accordingly.
