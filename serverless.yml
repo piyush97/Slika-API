@@ -12,7 +12,8 @@ service: slika-api
 provider:
   name: aws
   runtime: nodejs6.10
-   events:
+   
+  events:
      - http:
          path: users/create
          method: get
