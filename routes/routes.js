@@ -8,6 +8,8 @@ const Notes = require('../models/notes');
 const keys = require('../config/keys');
 // const notes = require('./notes');
 const User = require('../models/User');
+// Load User Profile
+const Profile = require('../models/Profile');
 
 // Load Input Validation
 const ValidateRegisterInput = require('../validation/register');
@@ -90,7 +92,6 @@ router.post('/register', (req, res) => {
 // @Route Post
 
 router.post('/login', (req, res) => {
-
   const { errors, isValid } = ValidateLoginInput(req.body);
   // Check validation
   if (!isValid) {
@@ -150,4 +151,38 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
     email: req.user.email,
   });
 });
+
+// @Route GET
+// @access Private
+
+router.get('/profile', passport.authenticate('jwt', {
+  session: false,
+}), (req, res) => {
+  const errors = {};
+
+  Profile.findOne({
+    user: req.user.id,
+  })
+    .then((profile) => {
+      if (!profile) {
+        errors.noprofile = 'There is no profile for this user';
+        return res.status(404).json(errors);
+      }
+      res.json(profile);
+    })
+    .catch(err => res.status(404).json(err));
+});
+
+// @Route POST
+// @access Private
+
+router.post('/profile', passport.authenticate('jwt', {
+  session: false,
+}), (req, res) => {
+  const profileFields = {};
+  profileFields.user = req.user.id;
+  if (req.body.handle) profileFields.handle = res.body.handle;
+  if (req.body.college) profileFields.college = res.body.college;
+});
+
 module.exports = router;
