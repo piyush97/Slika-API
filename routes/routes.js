@@ -90,6 +90,13 @@ router.post('/register', (req, res) => {
 // @Route Post
 
 router.post('/login', (req, res) => {
+
+  const { errors, isValid } = ValidateLoginInput(req.body);
+  // Check validation
+  if (!isValid) {
+    return res.status(404).json(errors);
+  }
+
   const email = req.body.email;
   const password = req.body.password;
 
