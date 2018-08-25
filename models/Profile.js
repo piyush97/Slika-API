@@ -13,4 +13,26 @@ const ProfileSchema = new Schema({
     required: true,
     max: 40,
   },
+  college: {
+    type: String,
+  },
+  department: {
+    type: String,
+  },
+  location: {
+    type: String,
+  },
+  status: {
+    type: String,
+  },
+  skills: {
+    type: [String],
+    required: true,
+  },
+  bio: {
+    type: String,
+  },
+  githubusername: {
+    type: String,
+  },
 });
