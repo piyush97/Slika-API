@@ -214,6 +214,7 @@ router.post('/profile', passport.authenticate('jwt', {
               res.status(400).json(errors);
             }
             // Save Profile
+            new Profile(profileFields).save().then(profile => res.json(profile));
           });
       }
     });
