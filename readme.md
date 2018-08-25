@@ -58,5 +58,10 @@ https://slika.herokuapp.com/
     "validator": "10.6.0"
 ```
 
+# How's the code?
+This only works well by accident and was mostly a joke. The code quality is accordingly.
+
+# License
+This project is provided for educational purposes only. It is not affiliated with and has not been approved by MSRIT or any other Organisation.
 
 Made with :blue_heart: By Piyush Mehta 
