@@ -158,7 +158,9 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
 router.get('/', passport.authenticate('jwt', {
   session: false,
 }), (req, res) => {
-
+  Profile.findOne({
+    
+  });
 });
 
 module.exports = router;
