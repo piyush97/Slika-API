@@ -198,9 +198,11 @@ router.post('/profile', passport.authenticate('jwt', {
         },
         {
           new: true,
-        });
+        })
+          .then(profile => res.json(profile));
       } else {
       // Create
+
       }
     });
 });
