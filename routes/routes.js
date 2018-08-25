@@ -173,4 +173,12 @@ router.get('/profile', passport.authenticate('jwt', {
     .catch(err => res.status(404).json(err));
 });
 
+// @Route POST
+// @access Private
+
+router.post('/profile', passport.authenticate('jwt', {
+  session: false,
+}), () => {
+});
+
 module.exports = router;
