@@ -15,7 +15,7 @@ https://slika.herokuapp.com/
 ---------
 
 # API Server and Base URL
-## The API is Hosted on AWS Using NGINX Engine using a T2 Small with Intel Xeon family processor at Singapore(Asia)
+## The API is Hosted on AWS Using NGINX Engine using a AWS Serverless and Lambda at Singapore(Asia)
 
 
 
