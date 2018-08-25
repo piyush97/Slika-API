@@ -90,7 +90,6 @@ router.post('/register', (req, res) => {
 // @Route Post
 
 router.post('/login', (req, res) => {
-
   const { errors, isValid } = ValidateLoginInput(req.body);
   // Check validation
   if (!isValid) {
