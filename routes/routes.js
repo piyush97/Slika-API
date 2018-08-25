@@ -182,6 +182,7 @@ router.post('/profile', passport.authenticate('jwt', {
   const profileFields = {};
   profileFields.user = req.user.id;
   if (req.body.handle) profileFields.handle = res.body.handle;
+  if (req.body.college) profileFields.college = res.body.college;
 });
 
 module.exports = router;
