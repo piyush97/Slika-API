@@ -208,7 +208,13 @@ router.post('/profile', passport.authenticate('jwt', {
         Profile.findOne({
           handle: profileFields.handle
         })
-          .then(profile => )
+          .then((profile) => {
+            if (profile) {
+              errors.handle = 'That handle already exists';
+              res.status(400).json(errors);
+            }
+            // Save Profile
+          });
       }
     });
 });
