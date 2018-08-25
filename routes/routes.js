@@ -203,6 +203,12 @@ router.post('/profile', passport.authenticate('jwt', {
       } else {
       // Create
 
+        // Check if handle exists
+
+        Profile.findOne({
+          handle: profileFields.handle
+        })
+          .then(profile => )
       }
     });
 });
