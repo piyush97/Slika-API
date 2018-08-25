@@ -183,6 +183,23 @@ router.post('/profile', passport.authenticate('jwt', {
   profileFields.user = req.user.id;
   if (req.body.handle) profileFields.handle = res.body.handle;
   if (req.body.college) profileFields.college = res.body.college;
+
+  Profile.findOne({
+    user: req.user.id,
+  })
+    .then((profile) => {
+      if (profile) {
+        // Update
+        Profile.findOneAndUpdate({
+          user: req.user.id,
+        },
+        {
+          $set: profileFields,
+        })
+      } else {
+      // Create
+      }
+    });
 });
 
 module.exports = router;
