@@ -8,6 +8,7 @@ const Notes = require('../models/notes');
 const keys = require('../config/keys');
 // const notes = require('./notes');
 const User = require('../models/User');
+const Profile = require('../models/Profile');
 
 // Load Input Validation
 const ValidateRegisterInput = require('../validation/register');
@@ -149,5 +150,9 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
     email: req.user.email,
   });
 });
+
+// @Route GET
+// @access Public
+router.get()
 
 module.exports = router;
