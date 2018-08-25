@@ -155,7 +155,7 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
 // @Route GET
 // @access Private
 
-router.get('/', passport.authenticate('jwt', {
+router.get('/profile', passport.authenticate('jwt', {
   session: false,
 }), (req, res) => {
   const errors = {};
