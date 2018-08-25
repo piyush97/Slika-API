@@ -195,7 +195,10 @@ router.post('/profile', passport.authenticate('jwt', {
         },
         {
           $set: profileFields,
-        })
+        },
+        {
+          new: true,
+        });
       } else {
       // Create
       }
