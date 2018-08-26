@@ -1,3 +1,5 @@
+// TODO: Get all data from the schema here.
+
 const Validator = require('validator');
 
 const isEmpty = require('./is-empty');
