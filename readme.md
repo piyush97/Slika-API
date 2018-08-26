@@ -4,6 +4,7 @@
 <img src='https://preview.ibb.co/hEJJDK/7152018235215.png' height="300px" width="500px">
 </p>
 
+[![Gitter chat](https://badges.gitter.im/piyush97/slika-api.png)
 [![Build Status](https://travis-ci.com/piyush97/Slika-API.svg?token=g3CxDf8EXQoxGMAHdh9U&branch=master)](https://travis-ci.com/piyush97/Slika-API)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
