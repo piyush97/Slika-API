@@ -4,6 +4,8 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
+// Load Validation for profike
+const validateProfileInput = require('../validation/profile');
 const Notes = require('../models/notes');
 const keys = require('../config/keys');
 // const notes = require('./notes');
@@ -179,6 +181,14 @@ router.get('/profile', passport.authenticate('jwt', {
 router.post('/profile', passport.authenticate('jwt', {
   session: false,
 }), (req, res) => {
+  const { errors, isValid } = validateProfileInput(req.body);
+
+  // Check validation
+
+  if (!isValid) {
+    // return any errors
+    return res.status(400).json(errors);
+  }
   const profileFields = {};
   profileFields.user = req.user.id;
   if (req.body.handle) profileFields.handle = res.body.handle;
