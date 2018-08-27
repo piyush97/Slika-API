@@ -1,6 +1,6 @@
 <h1 align="center">Slika REST API</h1>
 <p align="center">
-http://slika.in/
+http://18.136.196.155/
 <img src='https://preview.ibb.co/hEJJDK/7152018235215.png' height="300px" width="500px">
 </p>
 <p align="center">
