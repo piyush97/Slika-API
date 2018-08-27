@@ -107,5 +107,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
+## License
+<p align="center">
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fpiyush97%2FSlika-API?ref=badge_large" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpiyush97%2FSlika-API.svg?type=large"/></a>
+</p>
 Made with :blue_heart: By Piyush Mehta 
