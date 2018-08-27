@@ -28,6 +28,17 @@ http://18.136.196.155/
 # API Server and Base URL
 ## The API is Hosted on Heroku Right now.
 
+------
+
+# Features:
+1. Create a new student user/Teacher user
+1. Login 
+1. Open Profile Page of each User
+1. Open Notes
+1. Chat with other users
+
+------
+
 ## Usage
 
 **Example Response**
