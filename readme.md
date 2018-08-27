@@ -1,6 +1,5 @@
 <h1 align="center">Slika REST API</h1>
 <p align="center">
-http://18.136.196.155/
 <img src='https://preview.ibb.co/hEJJDK/7152018235215.png' height="300px" width="500px">
 </p>
 <p align="center">
@@ -21,6 +20,7 @@ Made by the creators of My College Forums
 # Docs
  COMING SOON
 ---------
+http://18.136.196.155/
 ---------
 
 # API Server and Base URL
