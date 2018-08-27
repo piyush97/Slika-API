@@ -7,7 +7,7 @@
 <a href="https://travis-ci.com/piyush97/Slika-API"><img src="https://img.shields.io/travis/r-spacex/SpaceX-API.svg?longCache=true&style=for-the-badge"></a>
 
 <a href="https://hub.docker.com/r/piyush97/slika-api/"><img src="https://img.shields.io/docker/build/jakewmeyer/spacex-api.svg?longCache=true&style=for-the-badge"></a>
-<a href="https://github.com/r-spacex/SpaceX-API/releases"><img src="https://img.shields.io/github/release/r-spacex/SpaceX-API.svg?longCache=true&style=for-the-badge"></a>
+<a href="https://github.com/piyush97/Slika-API/releases"><img src="https://img.shields.io/github/release/r-spacex/SpaceX-API.svg?longCache=true&style=for-the-badge"></a>
 <a href="https://github.com/piyush97/Slika-API/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=for-the-badge"></a>
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Slika-api/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -24,6 +24,13 @@
 # API Server and Base URL
 ## The API is Hosted on Heroku Right now.
 
+## Usage
+
+**Example Response**
+
+```bash
+curl -s slika.herokuapp.com
+```
 
 
 ### POST
