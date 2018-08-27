@@ -13,10 +13,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </p>
 
+<h3 align="center">Open Source REST API for launching an App|| Website for Educational Purpose and Making a community out of it!</h3>
 
-
-
-https://slika.herokuapp.com/
 
 # Docs
 
