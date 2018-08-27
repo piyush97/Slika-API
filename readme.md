@@ -1,40 +1,36 @@
-# Slika Api Docs
+<h1 align="center">Slika REST API</h1>
 <p align="center">
-
+http://18.136.196.155/
 <img src='https://preview.ibb.co/hEJJDK/7152018235215.png' height="300px" width="500px">
 </p>
+<p align="center">
+<a href="https://travis-ci.com/piyush97/Slika-API"><img src="https://img.shields.io/travis/r-spacex/SpaceX-API.svg?longCache=true&style=for-the-badge"></a>
 
+<a href="https://hub.docker.com/r/piyush97/slika-api/"><img src="https://img.shields.io/docker/build/jakewmeyer/spacex-api.svg?longCache=true&style=for-the-badge"></a>
+<a href="https://github.com/piyush97/Slika-API/releases"><img src="https://img.shields.io/github/release/r-spacex/SpaceX-API.svg?longCache=true&style=for-the-badge"></a>
+<a href="https://github.com/piyush97/Slika-API/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=for-the-badge"></a>
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Slika-api/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
-[![Build Status](https://travis-ci.com/piyush97/Slika-API.svg?token=g3CxDf8EXQoxGMAHdh9U&branch=master)](https://travis-ci.com/piyush97/Slika-API)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</p>
 
-https://slika.herokuapp.com/
+<h3 align="center">Open Source REST API for launching an App|| Website for Educational Purpose and Making a community out of it!</h3>
+
 
 # Docs
-
+ COMING SOON
 ---------
 ---------
 
 # API Server and Base URL
-## The API is Hosted on AWS Using NGINX Engine using a AWS Serverless and Lambda at Singapore(Asia)
+## The API is Hosted on Heroku Right now.
 
+## Usage
 
+**Example Response**
 
-### POST
-####  `/register`
-1. User registration
-1. **Input Params** `Email, Password, Confirmation Password, name` 
-
-####  `/notes`
-1. To Upload notes
-
-####  `/login`
-1. To login using:
-`email, password `
-
-### GET
-`/`
-1. Notes with key value pair as 
+```bash
+curl -s slika.herokuapp.com
+```
 ```json
 {
     "notes": [
@@ -78,6 +74,14 @@ https://slika.herokuapp.com/
 ## Why Use Slika-API?
 `Slika Api not only provides you with the best notes, it also gives you authentications and userbase option to contact other students easily`
 
+## Future Features
+1. Chat with your teachers
+1. Raise up doubts and queries
+
+## Contributions
+See the [contribution](https://github.com/piyush97/Slika-API/blob/master/CONTRIBUTING.md) guide for detailed steps
+
+
 # How's the code?
 This only works well by accident and was mostly a joke. The code quality is accordingly.
 
@@ -107,5 +111,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
+## License
+<p align="center">
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fpiyush97%2FSlika-API?ref=badge_large" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpiyush97%2FSlika-API.svg?type=large"/></a>
+</p>
 Made with :blue_heart: By Piyush Mehta 
