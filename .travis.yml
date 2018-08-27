@@ -5,3 +5,6 @@ cache: # Caching Node Modules :D
   directories:
     - "node_modules"
   yarn: true
+script:
+  - npm run start
+  
