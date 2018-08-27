@@ -31,23 +31,6 @@
 ```bash
 curl -s slika.herokuapp.com
 ```
-
-
-### POST
-####  `/register`
-1. User registration
-1. **Input Params** `Email, Password, Confirmation Password, name` 
-
-####  `/notes`
-1. To Upload notes
-
-####  `/login`
-1. To login using:
-`email, password `
-
-### GET
-`/`
-1. Notes with key value pair as 
 ```json
 {
     "notes": [
