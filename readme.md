@@ -11,6 +11,8 @@ http://18.136.196.155/
 <a href="https://github.com/piyush97/Slika-API/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=for-the-badge"></a>
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Slika-api/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</br>
+Made by the creators of My College Forums
 </p>
 
 <h3 align="center">Open Source REST API for launching an App|| Website for Educational Purpose and Making a community out of it!</h3>
