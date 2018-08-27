@@ -117,4 +117,8 @@ SOFTWARE.
 <p align="center">
 <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fpiyush97%2FSlika-API?ref=badge_large" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpiyush97%2FSlika-API.svg?type=large"/></a>
 </p>
+
+#### Coming soon
+GraphQL Slika-API
+
 Made with :blue_heart: By Piyush Mehta 
