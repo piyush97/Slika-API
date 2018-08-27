@@ -18,6 +18,7 @@
 </br><h3 align='center'>
 Made by the creators of My College Forums
 </h3>
+
 # Docs
 
 ---------
