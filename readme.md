@@ -18,7 +18,7 @@ Made by the creators of My College Forums
 
 
 # Docs
- COMING SOON
+
 ---------
 http://18.136.196.155/
 ---------
