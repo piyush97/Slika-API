@@ -5,4 +5,3 @@ jspm_packages
 # Serverless directories
 .serverless
 
-/config/keys_dev.js
