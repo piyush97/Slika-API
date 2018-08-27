@@ -74,6 +74,10 @@ curl -s slika.herokuapp.com
 ## Why Use Slika-API?
 `Slika Api not only provides you with the best notes, it also gives you authentications and userbase option to contact other students easily`
 
+## Future Features
+1. Chat with your teachers
+1. Raise up doubts and queries
+
 ## Contributions
 See the [contribution](https://github.com/piyush97/Slika-API/blob/master/CONTRIBUTING.md) guide for detailed steps
 
