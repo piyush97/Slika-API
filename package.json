@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/piyush97/slika-API#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcryptjs": "2.4.3",
     "body-parser": "1.18.3",
     "esdoc": "^1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
