@@ -62,23 +62,24 @@ curl -s slika.herokuapp.com
 ```
 
 #### Tech Used:
-```json
-    "bcryptjs": "2.4.3",
-    "body-parser": "1.18.3",
-    "esdoc": "1.1.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "express": "4.16.3",
-    "gravatar": "1.6.0",
-    "joi": "13.6.0",
-    "jsonwebtoken": "^8.3.0",
-    "mongoose": "5.2.9",
-    "mustache-express": "1.2.7",
-    "nodemon": "1.18.3",
-    "passport": "0.4.0",
-    "passport-jwt": "4.0.0",
-    "underscore": "1.9.1",
-    "validator": "10.6.0"
-```
+1. NodeJS: 10.6.0,
+1. MongoDb: 3.6.3,
+1. bcryptjs: 2.4.3,
+1. body-parser: 1.18.3,
+1. esdoc: 1.1.0,
+1. esdoc-standard-plugin: 1.0.0,
+1. express: 4.16.3,
+1. gravatar: 1.6.0,
+1. joi: 13.6.0,
+1. jsonwebtoken: ^8.3.0,
+1. mongoose: 5.2.9,
+1. mustache-express: 1.2.7,
+1. nodemon: 1.18.3,
+1. passport: 0.4.0,
+1. passport-jwt: 4.0.0,
+1. underscore: 1.9.1,
+1. validator: 10.6.0
+
 
 # FAQS
 
