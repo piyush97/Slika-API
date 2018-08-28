@@ -70,12 +70,13 @@ curl -s slika.herokuapp.com
     "express": "4.16.3",
     "gravatar": "1.6.0",
     "joi": "13.6.0",
-    "jsonwebtoken": "8.3.0",
+    "jsonwebtoken": "^8.3.0",
     "mongoose": "5.2.9",
     "mustache-express": "1.2.7",
     "nodemon": "1.18.3",
     "passport": "0.4.0",
     "passport-jwt": "4.0.0",
+    "underscore": "1.9.1",
     "validator": "10.6.0"
 ```
 
