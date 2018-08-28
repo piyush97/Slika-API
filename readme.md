@@ -135,6 +135,12 @@ GraphQL Slika-API
 
 <a href="https://ibb.co/eP7fyU"><img src="https://thumb.ibb.co/eP7fyU/IMG_3630.jpg" alt="IMG_3630" border="10" height='40px' ></a>
 
+# Apps Made using Slika-API
+
+## Slika: MSRIT
+<a href="https://ibb.co/dy8fXp"><img src="https://thumb.ibb.co/dy8fXp/Screen_Shot_2018_08_21_at_10_51_43_AM.jpg" alt="Screen_Shot_2018_08_21_at_10_51_43_AM" border="0"></a>
+
+
 # OFFICIAL API-DOCS
 Coming Soon!
 
