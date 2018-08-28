@@ -141,6 +141,8 @@ GraphQL Slika-API
 ## Slika: MSRIT
 <a href="https://ibb.co/dy8fXp"><img src="https://thumb.ibb.co/dy8fXp/Screen_Shot_2018_08_21_at_10_51_43_AM.jpg" alt="Screen_Shot_2018_08_21_at_10_51_43_AM" border="0"></a>
 
+## Slika: Hostel
+<a href="https://ibb.co/f9uPcp"><img src="https://thumb.ibb.co/f9uPcp/mcf.jpg" alt="mcf" border="0"></a>
 
 # OFFICIAL API-DOCS
 Coming Soon!
