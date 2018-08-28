@@ -71,7 +71,7 @@ curl -s slika.herokuapp.com
 1. express: 4.16.3,
 1. gravatar: 1.6.0,
 1. joi: 13.6.0,
-1. jsonwebtoken: ^8.3.0,
+1. jsonwebtoken: 8.3.0,
 1. mongoose: 5.2.9,
 1. mustache-express: 1.2.7,
 1. nodemon: 1.18.3,
