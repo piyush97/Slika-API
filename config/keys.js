@@ -3,9 +3,4 @@ const configuration = {
   secretOrKey: 'secret',
 };
 
-if (process.env.NODE_ENV === 'test') {
-  configuration.mongoURI = 'mmongodb://:@localhost:27017/slika';
-  configuration.secretOrKey = 'secret';
-}
-
 module.exports = configuration;

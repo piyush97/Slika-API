@@ -1,8 +1,10 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const { describe, beforeEach, it } = require('mocha');
+const { describe, before, it } = require('mocha');
+const mongoose = require('mongoose');
 const Notes = require('./../models/notes');
 const server = require('./../server');
+const keys = require('./../config/keys_test');
 
 const expect = chai.expect;
 chai.use(chaiHttp);
@@ -16,9 +18,18 @@ describe('Notes tests', () => {
     id: 1,
   };
 
-  beforeEach((done) => {
-    Notes.deleteMany({}, (err) => {
-      console.error(err);
+  after((done) => {
+    mongoose.connection.db.dropDatabase(() => {
+      console.log('Closing test database');
+      mongoose.connection.close().then(done());
+    });
+  });
+
+  before((done) => {
+    mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
+    const db = mongoose.connection;
+    db.on('error', console.error.bind(console, 'connection error'));
+    db.once('open', () => {
       done();
     });
   });

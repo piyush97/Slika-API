@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon main",
-    "test": "export PORT=8081 && export NODE_ENV=test && nyc --timeout=5000 --reporter=text --reporter=html mocha"
+    "test": "export PORT=8081 && export NODE_ENV=test && nyc --timeout=5000 --reporter=text --reporter=html mocha --exit"
   },
   "repository": {
     "type": "git",
