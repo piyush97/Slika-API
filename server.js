@@ -13,11 +13,13 @@ const app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect(keys.mongoURI, {
-  useNewUrlParser: true,
-}).then(() => {
-  console.log('db Connected');
-}).catch(err => console.log(err));
+if (process.env.NODE_ENV !== 'test') {
+  mongoose.connect(keys.mongoURI, {
+    useNewUrlParser: true,
+  }).then(() => {
+    console.log('db Connected');
+  }).catch(err => console.log(err));
+}
 
 // Body Parser as a Middleware
 
@@ -47,3 +49,5 @@ const PORT = 8080;
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Listening to port  ${PORT}`);
 });
+
+module.exports = app;
