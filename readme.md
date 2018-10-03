@@ -79,10 +79,6 @@ curl -s slika.herokuapp.com
 1. passport-jwt: 4.0.0,
 1. underscore: 1.9.1,
 1. validator: 10.6.0
-1. chai: 4.2.0,
-1. chai-http: 4.2.0,
-1. mocha: 5.2.0
-1. nyc: 13.0.1
 
 
 # FAQS
