@@ -8,8 +8,5 @@ module.exports = {
             "enforceForRenamedProperties": false
         }]
     },
-    "extends": "airbnb-base",
-    "env": {
-        "mocha": true,
-    }
+    "extends": "airbnb-base"
 };
