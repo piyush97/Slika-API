@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon main",
-    "test": "export PORT=8081 && export NODE_ENV=test && mocha"
+    "test": "export PORT=8081 && export NODE_ENV=test && nyc --timeout=5000 --reporter=text --reporter=html mocha"
   },
   "repository": {
     "type": "git",
@@ -40,11 +40,12 @@
     "node": "10.6.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.2.0",
+    "chai": "4.2.0",
+    "chai-http": "4.2.0",
     "eslint": "5.4.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.14.0",
-    "mocha": "^5.2.0"
+    "mocha": "5.2.0",
+    "nyc": "13.0.1"
   }
 }
